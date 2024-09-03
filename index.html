@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/980219df28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Compras</title>
+</head>
+<body>
+    <div class="nav">
+        <i class="fa-solid fa-bars show-elements"></i>
+        <div class="items-nav-hidden" data-items="itemsNav">
+            <a href="#lista">Faça sua lista</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contato">Contatos</a>
+        </div>
+        
+    </div>
+    <div class="container hidden" id="home" data-container="container" data-text="text-scroll">
+        <div class="container-text">
+            <h1>Lista De Compras</h1>
+            <p>Faça a sua lista de compras para não esquecer de nada.</p>
+        </div>
+            <div class="slide-item" data-slide="item">
+                <img src="image/Supermercado-1.jpg" alt="frutas">
+            </div>
+            <div class="slide-item" data-slide="item">
+                <img src="image/Supermercado-2.jpg" alt="carrinho">
+            </div>
+            <div class="slide-item" data-slide="item">
+                <img src="image/Supermercado-3.jpg" alt="bebidas">
+            </div>
+            <div class="indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+    </div>
+
+    <div class="lista-compras hidden" id="lista" data-lista="lista-compras" data-text="text-scroll">
+        <h1 style="text-align: center;">Faça Sua Lista</h1>
+        <div class="escreva-items">
+            <p>Escreva aqui o que você quer comprar: <input type="text" placeholder="Ex: Feijão" data-nome="nome-item" class="input">
+            <button class="btn-submit" data-submit="submit">Enviar</button>
+            </p>
+            <p class="maxItems">Você atingiu o valor máximo de items! </p>
+        </div>
+        <p data-visible="visible-p" class="none-p">Por favor digite algo!</p>
+        <!--<ul>
+            <li></li>
+            <span></span>
+            <button></button>
+        </ul>-->
+        </div>
+
+
+    <div class="about hidden" id="about" data-text="text-scroll">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ipsam blanditiis, nam fugit, eligendi ducimus unde itaque sequi voluptatibus quisquam earum ipsa sapiente a nisi modi voluptas fuga, amet temporibus?</p>
+    </div>
+
+    <div class="footer hidden" id="contato" data-text="text-scroll">
+       <p> &copy; Júlia Miriã</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
